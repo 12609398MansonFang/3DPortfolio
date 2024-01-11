@@ -1,0 +1,83 @@
+{
+    "home":
+    [
+        {
+            "content": "Hello everyone, my name is Manson Fang and welcome to my world."
+        }
+    ],
+
+    "aboutme":
+    [
+        {
+            "content":"I am currently a graduate engineer with a degree from the University of Technology Sydney. My goal is to learn, university has done wonders for my development and there is still an abundance of untapped knowledge for which i still haven't explored. Check out my education history through the button below."
+        }
+    ],
+
+    "projects":
+    [
+        {
+            "content":"Check out my personal projects through clicking the button below.",
+            "project1":
+            [
+                {
+                    "projectname":"3D Portfolio",
+                    "description":"3D portfolio that works smoothly on any device and provides interactive functionality and fun animations. Built with Javascript, React, Three.js, Tailwind CSS, and Blender."
+                }
+            ],
+            "project2":
+            [
+                {
+                    "projectname":"Python Game (Protect The Cheese)",
+                    "description":"An interactive and entertaining Python-based guessing game with a user-friendly Tkinter GUI, offering word-based challenges, engaging and approachable hints, and a visually engaging design for an immersive and enjoyable player experience."
+                }
+            ]
+        }
+    ],
+
+    "work":
+    [
+        {
+            "content":"Check out my work experience through clicking the button below.",
+            "experience":
+            [
+                {
+                    "name":"Woolworths, Chatswood East",
+                    "position":"Grocery Assistant Department Manager",
+                    "description":"Provided to managerial support for grocery manage through running the day-to-day routine and operation when required, provided coaching and training team members whilst maintained the standard and integrity of both the shop floor, back of house and inventory standard",
+                    "duration":"02/2023 – Present"
+                },
+        
+                {
+                    "name":"Woolworths, Chatswood East",
+                    "position":"Grocery Team Member",
+                    "description":"Undertook grocery routine ranging from morning shop scan, processing stock, inventor checks and back of house maintenance",
+                    "duration":"10/2022 – 02/2023"
+                },
+        
+                {
+                    "name":"Woolworths. Neutral Bay Village",
+                    "position":"Grocery Team Member",
+                    "description":"Undertook grocery routine ranging from morning shop scan, processing stock, inventor checks and back of house maintenance",
+                    "duration":"05/2021 – 10/2022"
+                }
+            ]
+        }
+    ],
+
+    "contact":
+    [
+        {
+            "content":"Lets Get in Touch"
+        }
+    ],
+
+    "disclaimer":
+    [
+        {
+            "title":"Disclaimer",
+            "content":"Content"
+        }
+    ]
+
+}
+
