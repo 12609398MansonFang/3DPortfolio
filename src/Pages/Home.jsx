@@ -34,7 +34,7 @@ const Home = () => {
     return (
         <div className='w-full h-screen relative'>
             <Suspense fallback={loadingScreen()}>
-                    <div className='flex justify-center absolute top-28 z-10 left-0 right-0'>
+                    <div className='flex justify-center absolute top-16 z-10 left-0 right-0'>
                         <Popup Angle={rotation}/>
                     </div>
 

@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import data from './data.json';
-import logo from '../Assets/utslogo.png';
+import logo from '../Assets/Images/utslogo.png';
 import Contact from './Contact';
-import Resume from '../Assets/MansonFangResume.pdf';
-import LinkedInLogo from '../Assets/LinkedInLogo.png';
-import GithubLogo from '../Assets/GithubLogo.png';
-import Portraitimg from '../Assets/home.jpeg';
-import Drag from '../Assets/draginstructions.png';
+import Resume from '../Assets/Documents/MansonFangResume.pdf';
+import LinkedInLogo from '../Assets/Images/LinkedInLogo.png';
+import GithubLogo from '../Assets/Images/GithubLogo.png';
+import Portraitimg from '../Assets/Images/home.jpeg';
+import Drag from '../Assets/Images/draginstructions.png';
+import Workimg from '../Assets/Images/experience.jpg';
+import Project1 from '../Assets/Images/ProjectImage1.png';
+import Project2 from '../Assets/Images/ProjectImage2.jpg';
+
 
 const Popup = ({Angle}) => 
 {
@@ -21,7 +25,6 @@ const Popup = ({Angle}) =>
     }
 
     let currentAngle = getAngle();
-
 
     const getStage = () => {
         let stage;
@@ -86,11 +89,14 @@ const Popup = ({Angle}) =>
             )
         } else if (currentStage === 3){
             return (
-                data.projects[0].content
+                    data.projects[0].content
             )
         } else if (currentStage === 4){
             return (
-                data.work[0].content
+                <div className='WorkLandingContent flex flex-col items-center'>
+                    <img src={Workimg} alt='Drag' className='w-48 h-42 p-2'/>
+                    {data.work[0].content}
+                </div>   
             )
         } else {
             return (
@@ -98,7 +104,6 @@ const Popup = ({Angle}) =>
             )
         }
     }
-
 
     const resumeDownload = () => {
         const download = Resume;
@@ -129,6 +134,20 @@ const Popup = ({Angle}) =>
         return (
             <img src={Drag} alt='Drag' className='w-5 h-5'/>
         )
+    }
+
+    const projectGitLink1 = () => {
+        const link = document.createElement('a')
+        link.href = 'https://github.com/12609398MansonFang/PortfolioReact'
+        link.target = '_blank';
+        link.click();
+    }
+
+    const projectGitLink2 = () => {
+        const link = document.createElement('a')
+        link.href = 'https://github.com/12609398MansonFang/ProtectTheCheese'
+        link.target = '_blank';
+        link.click();
     }
 
     const getButton = (currentStage) => {
@@ -167,7 +186,7 @@ const Popup = ({Angle}) =>
         }else if (currentStage === 2){
             return (
                 <button
-                    className={`w-24 h-10 p-1 text-sm rounded-lg items-center justify-center flex border border-black hover:bg-slate-300 ${showAboutMeContent ? 'bg-slate-300' : ''}`}
+                    className={`w-24 h-10 p-1 text-sm rounded-lg items-center justify-center flex border bg-slate-300 hover:bg-slate-400 ${showAboutMeContent ? 'bg-slate-400' : ''}`}
                     onClick={() => setShowAboutMeContent(!showAboutMeContent)}
                 >
                     {showAboutMeContent ? 'About Me' : 'About Me'}
@@ -177,7 +196,7 @@ const Popup = ({Angle}) =>
         } else if (currentStage === 3){
             return (
                 <button
-                    className={`w-24 h-10 p-1 text-sm rounded-lg items-center justify-center flex border border-black hover:bg-slate-300 ${showProjectsContent ? 'bg-slate-300' : ''}`}
+                    className={`w-24 h-10 p-1 text-sm rounded-lg items-center justify-center flex border bg-slate-300 hover:bg-slate-400 ${showProjectsContent ? 'bg-slate-400' : ''}`}
                     onClick={() => setShowProjectsContent(!showProjectsContent)}
                 >
                     {showProjectsContent ? 'Projects' : 'Projects'}
@@ -186,7 +205,7 @@ const Popup = ({Angle}) =>
         } else if (currentStage === 4){
             return (
                 <button
-                    className={`w-auto h-10 p-1 text-sm rounded-lg items-center justify-center flex border border-black hover:bg-slate-300 ${showWorkContent ? 'bg-slate-300' : ''}`}
+                    className={`w-auto h-10 p-1 text-sm rounded-lg items-center justify-center flex border bg-slate-300 hover:bg-slate-400 ${showWorkContent ? 'bg-slate-400' : ''}`}
                     onClick={() => setShowWorkContent(!showWorkContent)}
                 >
                     {showWorkContent ? 'Work Experience' : 'Work Experience'}
@@ -195,7 +214,7 @@ const Popup = ({Angle}) =>
         } else if (currentStage === 5){
             return (
                 <button
-                    className={`w-24 h-10 p-1 text-sm rounded-lg items-center justify-center flex border border-black hover:bg-slate-300 ${showContactContent ? 'bg-slate-300' : ''}`}
+                    className={`w-24 h-10 p-1 text-sm rounded-lg items-center justify-center flex border bg-slate-300 hover:bg-slate-400 ${showContactContent ? 'bg-slate-400' : ''}`}
                     onClick={() => setShowContactContent(!showContactContent)}
                 >
                     {showContactContent ? 'Contact Me' : 'Contact Me'}
@@ -236,9 +255,14 @@ const Popup = ({Angle}) =>
                             <h2 className='ProjectName font-bold row-span-1 text-sm'>{data.projects[0].project1[0].projectname}</h2>
                             <p className='ProjectDescription row-span-2 text-xs'>{data.projects[0].project1[0].description}</p>
                         </div>
-                        <div className='Icon col-span-1 flex flex-col'>
-                            <img src={logo} alt='Logo' className='row-span-2 w-10 h-10'></img>
-                            <button className='row-span-1 bg-orange-200 p-1 rounded-md text-sm'>GitHub</button>
+                        <div className='Icon col-span-1 flex flex-col items-center'>
+                            <img src={Project1} alt='Logo' className='row-span-2 h-16'></img>
+                            <button 
+                                className='row-span-1 bg-slate-300 p-1 rounded-md text-sm hover:bg-slate-400'
+                                onClick={projectGitLink1}
+                            >
+                                GitHub                         
+                            </button>
                         </div>
                     </div>
                     <div className='Project2 p-2 grid grid-cols-3 gap-2'>
@@ -246,9 +270,14 @@ const Popup = ({Angle}) =>
                             <h2 className='ProjectName font-bold row-span-1 text-sm'>{data.projects[0].project2[0].projectname}</h2>
                             <p className='ProjectDescription row-span-2 text-xs'>{data.projects[0].project2[0].description}</p>
                         </div>
-                        <div className='Icon col-span-1 flex flex-col'>
-                            <img src={logo} alt='Logo' className='row-span-2 w-10 h-10'></img>
-                            <button className='row-span-1 bg-orange-200 p-1 rounded-md text-sm'>GitHub</button>
+                        <div className='Icon col-span-1 flex flex-col items-center'>
+                            <img src={Project2} alt='Logo' className='row-span-2 h-16'></img>
+                            <button 
+                                className='row-span-1 bg-slate-300 p-1 rounded-md text-sm hover:bg-slate-400'
+                                onClick={projectGitLink2}
+                            >
+                                GitHub
+                            </button>
                         </div>
                     </div>
                 </div>

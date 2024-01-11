@@ -1,7 +1,7 @@
 import React from 'react';
 import { useGLTF } from '@react-three/drei';
 
-import skyScene from '../Assets/Sky.glb';
+import skyScene from '../Assets/GLB/Sky.glb';
 
 const Sky = () => {
     const sky = useGLTF(skyScene)

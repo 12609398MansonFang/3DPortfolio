@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useAnimations, useGLTF } from '@react-three/drei';
 
-import planeScene from '../Assets/Plane.glb'
+import planeScene from '../Assets/GLB/Plane.glb'
 
 const Plane = () => {
     const planeRef = useRef();

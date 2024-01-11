@@ -13,7 +13,7 @@ import { a } from '@react-spring/three';
 
 import { useRotation } from '../Components/RotationContext';
 import Plane from './Plane';
-import islandModel from '../Assets/Island.glb';
+import islandModel from '../Assets/GLB/Island.glb';
 
 
 const Island = ({ isRotating, setIsRotating, currentFocusPoint, ...props}) => 
