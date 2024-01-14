@@ -58,7 +58,7 @@ const Contact = () => {
             />
             <button 
                 type='submit'
-                className='hover:text-white pt-2'
+                className='bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
             >
                 SUBMIT
             </button>

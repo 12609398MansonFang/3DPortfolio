@@ -249,37 +249,56 @@ const Popup = ({Angle}) =>
     const projectsButton = () => {
         if(showProjectsContent){
             return (
-                <div className='projectsContainer flex flex-col space-y-2 p-2'>
-                    <div className='Project1 p-2 grid grid-cols-3 gap-2'>
-                        <div className='Icon col-span-2 flex flex-col'>
+                <div className='projectsContainer flex p-2 space-x-2'>
+
+                    <div className='Project1 bg-slate-100 opacity-80 p-2 max-w-52 rounded-md'>
+                        <div className='Project1Content flex flex-col'>
                             <h2 className='ProjectName font-bold row-span-1 text-sm'>{data.projects[0].project1[0].projectname}</h2>
                             <p className='ProjectDescription row-span-2 text-xs'>{data.projects[0].project1[0].description}</p>
                         </div>
-                        <div className='Icon col-span-1 flex flex-col items-center'>
-                            <img src={Project1} alt='Logo' className='row-span-2 h-16'></img>
+                        <div className='Project1Visuals col-span-1 flex flex-col items-center py-2'>
+                            <img src={Project1} alt='Logo' className='row-span-2 w-52 rounded-md'></img>
                             <button 
-                                className='row-span-1 bg-slate-300 p-1 rounded-md text-sm hover:bg-slate-400'
+                                className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
                                 onClick={projectGitLink1}
                             >
                                 GitHub                         
                             </button>
-                        </div>
+                        </div>      
                     </div>
-                    <div className='Project2 p-2 grid grid-cols-3 gap-2'>
-                        <div className='Icon col-span-2 flex flex-col'>
+
+                    <div className='Project2 bg-slate-100 opacity-80 p-2 max-w-52 rounded-md'>
+                        <div className='Project2Content flex flex-col'>
                             <h2 className='ProjectName font-bold row-span-1 text-sm'>{data.projects[0].project2[0].projectname}</h2>
                             <p className='ProjectDescription row-span-2 text-xs'>{data.projects[0].project2[0].description}</p>
                         </div>
-                        <div className='Icon col-span-1 flex flex-col items-center'>
-                            <img src={Project2} alt='Logo' className='row-span-2 h-16'></img>
+                        <div className='Project2Visuals col-span-1 flex flex-col items-center py-2'>
+                            <img src={Project2} alt='Logo' className='row-span-2 w-52 rounded-md'></img>
                             <button 
-                                className='row-span-1 bg-slate-300 p-1 rounded-md text-sm hover:bg-slate-400'
+                                className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
                                 onClick={projectGitLink2}
                             >
-                                GitHub
+                                GitHub                         
                             </button>
-                        </div>
+                        </div>      
                     </div>
+
+                    <div className='Project3 bg-slate-100 opacity-80 p-2 max-w-52 rounded-md'>
+                        <div className='Project3Content flex flex-col'>
+                            <h2 className='ProjectName font-bold row-span-1 text-sm'>{data.projects[0].project2[0].projectname}</h2>
+                            <p className='ProjectDescription row-span-2 text-xs'>{data.projects[0].project2[0].description}</p>
+                        </div>
+                        <div className='Project2Visuals col-span-1 flex flex-col items-center py-2'>
+                            <img src={Project2} alt='Logo' className='row-span-2 w-52 rounded-md'></img>
+                            <button 
+                                className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
+                                onClick={projectGitLink2}
+                            >
+                                GitHub                         
+                            </button>
+                        </div>      
+                    </div>                    
+
                 </div>
             )
         } else {

@@ -11,6 +11,8 @@ export default {
       },
       maxWidth:{
         '96': '24rem',
+        '64': '16rem',
+        '52' :'13rem'
       },
       colors: {
         gray: {

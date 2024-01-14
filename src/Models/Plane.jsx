@@ -9,10 +9,9 @@ const Plane = () => {
     const { actions } = useAnimations(animations, planeRef);
 
     useEffect(()=>{
-        actions['3DGeom~185_Material~1_0Action'].play();
+        actions['PlaneAction'].play();
         actions['Cube.009Action'].play();
-        actions['Cube.003Action'].play();
-        
+        actions['Cube.003Action'].play();        
     }, []);   
 
 

@@ -12,10 +12,45 @@ const PopupDisclaimer = () => {
       </div>
 
       
-      <div className='PopUpMain w-full max-w-96 rounded-b-md bg-slate-200 bg-opacity-80 p-2'>
-        <div className='flex flex-col items-center justify-center'>      
-          <h3 className='PopUpTitle text-md font-bold mx-auto'>{data.disclaimer[0].title}</h3>
-          <p className='PopUpContent text-sm text-center pb-3' >{data.disclaimer[0].content}</p>
+      <div className='PopUpMain w-full max-w-96 rounded-b-md bg-slate-200 bg-opacity-80 p-2' style={{ overflowY: 'auto', height: '80vh' }}>
+        <div className='PopContainer flex flex-col items-start'>      
+          <h1 className='PopUpDisclaimerTitle text-xl font-bold mx-auto'>Disclaimer</h1>
+
+          <h3 className='PopUpStatementTitle text-l font-bold mx-auto'>Statement</h3>
+          <p className='PopUpDisclaimerContent text-sm text-center pb-3' >{data.disclaimer[0].content}</p>
+
+          <h3 className='PopUpCreditsTitle text-l font-bold mx-auto'>Credits</h3>
+          {data.credits.map((credit, index) => (
+            <div className='PopUpCreditContent pb-3' key={index}>
+
+              <p className='PopUpItemRef text-sm'>
+                <span className='font-bold'>Model:</span> {credit.ModelRef}
+              </p>
+
+              <p className='PopUpItemName text-sm'>
+                <span className='font-bold'>Model Full Name:</span> {credit.ModelName}
+              </p>
+
+              <p className='PopUpItemSource text-sm'>
+                <span className='font-bold'>Model Source:</span> {credit.ModelSource}
+              </p>
+
+              <p className='PopUpItemAuthor text-sm'>
+                <span className='font-bold'>Model Author:</span> {credit.Author}
+              </p>
+
+              <p className='PopUpItemLink text-sm'>
+                <span className='font-bold'>Author Link:</span> {credit.AuthorLink}
+              </p>
+
+            </div>
+          ))}
+
+          <h3 className='PopUpContact  text-l font-bold mx-auto'>Contact</h3>
+          <p className='PopUpContactEmail text-sm justify-center pb-3' >
+          <span className='font-bold'>Email:</span> manson88fang@gmail.com
+          </p>
+
         </div>
       </div>
       

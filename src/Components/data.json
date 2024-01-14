@@ -2,14 +2,14 @@
     "home":
     [
         {
-            "content": "Hello everyone, my name is Manson Fang and welcome to my world."
+            "content":"Hello everyone, my name is Manson Fang and welcome to my world."
         }
     ],
 
     "aboutme":
     [
         {
-            "content":"I am currently a graduate engineer with a degree from the University of Technology Sydney. My goal is to learn, university has done wonders for my development and there is still an abundance of untapped knowledge for which i still haven't explored. Check out my education history through the button below."
+            "content":"As a graduate engineer from the University of Technology Sydney, my educational journey has fueled my development, yet there's still a wealth of untapped knowledge to explore. Click below to delve into my educational history, highlighting my commitment to continuous learning and growth beyond the classroom."
         }
     ],
 
@@ -74,8 +74,26 @@
     "disclaimer":
     [
         {
-            "title":"Disclaimer",
-            "content":"Content"
+            "content":"This portfolio website, has been crafted by Manson Fang in good faith for personal promotion and career progression, explicitly disclaims any commercial intent or financial gain, therefore any proposition regarding the use of this website commercially, will be rejected. The content and services showcased represent Manson Fang's personal work and achievements, with no compensation received and any material that has been externally sourced, has been referenced and detailed below. Users are strictly prohibited from misusing the website, and Manson Fang disclaims liability for any resulting damages. The website is provided at face value without warranties, and may lack periodic updates, prompting users to contact Manson Fang directly for the latest information. By using the website, users acknowledge and agree to these terms." 
+        }
+    ],
+
+    "credits":
+    [
+        {
+            "ModelRef":"Island",
+            "ModelName":"Stylized 3D Floating Island And Mine House", 
+            "ModelSource":"https://sketchfab.com/3d-models/stylized-3d-floating-island-and-mine-house-3cb24182a8504d439ee4e3c500565ac5",
+            "Author":"Skyler Muffin",
+            "AuthorLink":"https://sketchfab.com/boopdesignstudio"
+        },
+
+        {
+            "ModelRef":"Plane",
+            "ModelName":"Low Poly Scorpion Gunship From Avatar", 
+            "ModelSource":"https://www.cgtrader.com/free-3d-models/aircraft/helicopter/low-poly-scorpion-gunship-from-avatar",
+            "Author":"jigeobjeohin",
+            "AuthorLink":"https://www.cgtrader.com/jigeobjeogin"
         }
     ]
 
