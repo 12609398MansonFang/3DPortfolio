@@ -27,7 +27,10 @@ const Home = () => {
 
     const loadingScreen = () => {
         return (
-            <div className='flex justify-center absolute top-28 z-10 left-0 right-0'>Loading...</div>
+            <div className='flex flex-col items-center justify-center absolute top-28 z-10 left-0 right-0'>
+                <p>Loading....</p>
+                <p>Estimated Time: 30 - 40 seconds</p>
+            </div>
         )
     }
 
