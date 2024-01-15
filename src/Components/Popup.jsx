@@ -125,7 +125,7 @@ const Popup = ({Angle}) =>
 
     const gitHub = () => {
         const link = document.createElement('a')
-        link.href = 'https://github.com/12609398MansonFang/PortfolioReact'
+        link.href = 'https://github.com/12609398MansonFang/3DPortfolio'
         link.target = '_blank';
         link.click();
     }
