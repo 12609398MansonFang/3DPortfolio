@@ -138,7 +138,7 @@ const Popup = ({Angle}) =>
 
     const projectGitLink1 = () => {
         const link = document.createElement('a')
-        link.href = 'https://github.com/12609398MansonFang/PortfolioReact'
+        link.href = 'https://github.com/12609398MansonFang/3DPortfolio'
         link.target = '_blank';
         link.click();
     }
@@ -283,7 +283,7 @@ const Popup = ({Angle}) =>
                         </div>      
                     </div>
 
-                    <div className='Project3 bg-slate-100 opacity-80 p-2 max-w-52 rounded-md'>
+                    {/* <div className='Project3 bg-slate-100 opacity-80 p-2 max-w-52 rounded-md'>
                         <div className='Project3Content flex flex-col'>
                             <h2 className='ProjectName font-bold row-span-1 text-sm'>{data.projects[0].project2[0].projectname}</h2>
                             <p className='ProjectDescription row-span-2 text-xs'>{data.projects[0].project2[0].description}</p>
@@ -297,7 +297,7 @@ const Popup = ({Angle}) =>
                                 GitHub                         
                             </button>
                         </div>      
-                    </div>                    
+                    </div>                     */}
 
                 </div>
             )

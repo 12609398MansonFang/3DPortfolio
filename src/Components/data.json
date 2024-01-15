@@ -2,7 +2,7 @@
     "home":
     [
         {
-            "content":"Hello everyone, my name is Manson Fang and welcome to my world."
+            "content":"Greetings, everyone! I'm Manson Fang, and a warm welcome to my portfolio."
         }
     ],
 
@@ -21,7 +21,7 @@
             [
                 {
                     "projectname":"3D Portfolio",
-                    "description":"3D portfolio that works smoothly on any device and provides interactive functionality and fun animations. Built with Javascript, React, Three.js, Tailwind CSS, and Blender."
+                    "description":"3D portfolio that provides interactive functionality and fun animations. Built with Javascript, React, Three.js, Tailwind CSS, and Blender."
                 }
             ],
             "project2":
@@ -49,14 +49,14 @@
         
                 {
                     "name":"Woolworths, Chatswood East",
-                    "position":"Grocery Team Member",
-                    "description":"Undertook grocery routine ranging from morning shop scan, processing stock, inventor checks and back of house maintenance",
+                    "position":"Grocery Supervisor",
+                    "description":"Managed the opening of a brand-new retail store. Undertook grocery routine ranging from morning shop scan, processing stock, inventor checks and back of house maintenance",
                     "duration":"10/2022 – 02/2023"
                 },
         
                 {
                     "name":"Woolworths. Neutral Bay Village",
-                    "position":"Grocery Team Member",
+                    "position":"Grocery Supervisor",
                     "description":"Undertook grocery routine ranging from morning shop scan, processing stock, inventor checks and back of house maintenance",
                     "duration":"05/2021 – 10/2022"
                 }

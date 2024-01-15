@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei';
 import skyScene from '../Assets/GLB/Sky.glb';
 
 const Sky = () => {
-    const sky = useGLTF(skyScene)
+    const sky = useGLTF(skyScene);
     return (
         <mesh>
             <primitive object = {sky.scene}/>
@@ -12,4 +12,4 @@ const Sky = () => {
     )
 }
 
-export default Sky
+export default Sky;
