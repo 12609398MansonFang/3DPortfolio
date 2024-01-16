@@ -94,7 +94,16 @@
             "ModelSource":"https://www.cgtrader.com/free-3d-models/aircraft/helicopter/low-poly-scorpion-gunship-from-avatar",
             "Author":"jigeobjeohin",
             "AuthorLink":"https://www.cgtrader.com/jigeobjeogin"
+        },
+
+        {
+            "ModelRef":"Soldier",
+            "ModelName":"Soldier", 
+            "ModelSource":"https://sketchfab.com/3d-models/soldier-ba97db9f448549269a9fed67f9ca9bc1",
+            "Author":"Lahcen.el",
+            "AuthorLink":"https://sketchfab.com/Lahcen.el"
         }
+
     ]
 
 }
