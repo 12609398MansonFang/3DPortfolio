@@ -157,9 +157,9 @@ const Popup = ({Angle}) =>
                     <div className='flex items-center justify-center'>
                         <img src={Portraitimg} className='w-36 h-36'/>
                     </div>
-                    <div className='flex space-x-4 p-2'>
+                    <div className='flex space-x-6 p-2 justify-center'>
                         <button
-                            className={`w-8 h-8 p-1 text-sm items-center justify-center flex border font-bold text-white bg-black`}
+                            className={`w-8 h-8 p-1 text-sm items-center justify-center flex font-bold text-white bg-black hover:rounded-lg hover:border-slate-300 hover:border-2`}
                             onClick={resumeDownload}
                         >
                             CV
@@ -168,17 +168,17 @@ const Popup = ({Angle}) =>
                             className={`items-center justify-center flex`}
                             onClick={linkedin}
                         >
-                            <img src={LinkedInLogo} alt='LinkedIn' className='w-8 h-8'/>
+                            <img src={LinkedInLogo} alt='LinkedIn' className='w-8 h-8 hover:rounded-lg hover:border-slate-300 hover:border-2'/>
                         </button>
                         <button
                             className={`items-center justify-center flex`}
                             onClick={gitHub}
                         >
-                            <img src={GithubLogo} alt='Github' className='w-8 h-8'/>
+                            <img src={GithubLogo} alt='Github' className='w-8 h-8 hover:rounded-lg hover:border-slate-600 hover:border-2'/>
                         </button>    
                     </div>
                     <div className='flex flex-col justify-center items-center'>
-                        <p className='text-sm'>Click and Drag Below</p>
+                        <p className='text-sm'>Click on the Island Below and Drag Below</p>
                         <Instruction/>   
                     </div>                                  
                 </div>
