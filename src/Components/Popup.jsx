@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import data from './data.json';
+import { Link } from 'react-router-dom';
+import data from '../Assets/JSON/Data.json';
 import logo from '../Assets/Images/utslogo.png';
 import Contact from './Contact';
 import Resume from '../Assets/Documents/MansonFangResume.pdf';
@@ -258,12 +259,14 @@ const Popup = ({Angle}) =>
                         </div>
                         <div className='Project1Visuals col-span-1 flex flex-col items-center py-2'>
                             <img src={Project1} alt='Logo' className='row-span-2 w-52 rounded-md'></img>
-                            <button 
-                                className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
-                                onClick={projectGitLink1}
-                            >
-                                GitHub                         
-                            </button>
+                            <div className='space-x-2'>
+                                <button 
+                                    className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
+                                    onClick={projectGitLink1}
+                                >
+                                    GitHub                         
+                                </button>
+                            </div>
                         </div>      
                     </div>
 
@@ -274,12 +277,19 @@ const Popup = ({Angle}) =>
                         </div>
                         <div className='Project2Visuals col-span-1 flex flex-col items-center py-2'>
                             <img src={Project2} alt='Logo' className='row-span-2 w-52 rounded-md'></img>
-                            <button 
-                                className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
-                                onClick={projectGitLink2}
-                            >
-                                GitHub                         
-                            </button>
+                            <div className='space-x-2'>
+                                <button 
+                                    className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'   
+                                >
+                                    <Link to='/protectthecheese'>Play Game</Link>                      
+                                </button>
+                                <button 
+                                    className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
+                                    onClick={projectGitLink2}
+                                >
+                                    GitHub                         
+                                </button>
+                            </div>
                         </div>      
                     </div>
 

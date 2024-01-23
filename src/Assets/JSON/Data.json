@@ -27,8 +27,8 @@
             "project2":
             [
                 {
-                    "projectname":"Python Game (Protect The Cheese)",
-                    "description":"An interactive and entertaining Python-based guessing game with a user-friendly Tkinter GUI, offering word-based challenges, engaging and approachable hints, and a visually engaging design for an immersive and enjoyable player experience."
+                    "projectname":"Protect The Cheese (JavaScript Browser Game)",
+                    "description":"An interactive and entertaining browser-based guessing game with a user-friendly React GUI, offering word-based challenges, engaging and approachable hints, and a visually engaging design for an immersive and enjoyable player experience."
                 }
             ]
         }
