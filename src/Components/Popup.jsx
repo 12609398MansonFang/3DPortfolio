@@ -293,22 +293,28 @@ const Popup = ({Angle}) =>
                         </div>      
                     </div>
 
-                    {/* <div className='Project3 bg-slate-100 opacity-80 p-2 max-w-52 rounded-md'>
+                    <div className='Project3 bg-slate-100 opacity-80 p-2 max-w-52 rounded-md'>
                         <div className='Project3Content flex flex-col'>
                             <h2 className='ProjectName font-bold row-span-1 text-sm'>{data.projects[0].project2[0].projectname}</h2>
                             <p className='ProjectDescription row-span-2 text-xs'>{data.projects[0].project2[0].description}</p>
                         </div>
-                        <div className='Project2Visuals col-span-1 flex flex-col items-center py-2'>
+                        <div className='Project3Visuals col-span-1 flex flex-col items-center py-2'>
                             <img src={Project2} alt='Logo' className='row-span-2 w-52 rounded-md'></img>
-                            <button 
-                                className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
-                                onClick={projectGitLink2}
-                            >
-                                GitHub                         
-                            </button>
+                            <div className='space-x-2'>
+                                <button 
+                                    className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'   
+                                >
+                                    <Link to='/hittheskies'>Play Game</Link>                      
+                                </button>
+                                <button 
+                                    className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
+                                    onClick={projectGitLink2}
+                                >
+                                    GitHub                         
+                                </button>
+                            </div>
                         </div>      
-                    </div>                     */}
-
+                    </div>
                 </div>
             )
         } else {

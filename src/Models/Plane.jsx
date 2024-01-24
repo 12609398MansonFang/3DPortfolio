@@ -21,7 +21,7 @@ const Plane = () => {
                 <primitive object={scene}/>
             </group>
         </mesh>
-    )
+        )
     }
 
 export default Plane;
