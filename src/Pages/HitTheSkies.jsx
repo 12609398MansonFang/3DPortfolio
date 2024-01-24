@@ -7,6 +7,8 @@ import Sky from '../Models/Sky';
 import PlaneGame from '../Components/PlaneGame';
 import CustomCamera from '../Components/CustomCamera';
 
+
+
 const HitTheSkies = () => {
     const [planeCoordinates, setPlaneCoordinates] = useState({ x: 0, y: 0, z: 0 });
     const [planeRotation, setPlaneRotation] = useState({ x: 0, y: 0, z: 0 });
@@ -29,6 +31,11 @@ const HitTheSkies = () => {
         setCameraRotation(rotation);
     };
 
+    const getCoordinates = () => {
+        return  [[ 3, 2, 7 ], [ 1, -2, -7 ], [-4, -3, -5], [-6, -5, 5]]
+    } 
+
+    const boxPositions = getCoordinates();
 
 
     return (
@@ -46,7 +53,10 @@ const HitTheSkies = () => {
                 <pointLight />
                 <spotLight />
                 <hemisphereLight />
-                <Box position={[0, 0, 0]} args={[1, 1, 1]} material-color="green" />
+                <Box position={boxPositions[0]} material-color="red"/>
+                <Box position={boxPositions[1]} material-color="red"/>
+                <Box position={boxPositions[2]} material-color="red"/>
+                <Box position={boxPositions[3]} material-color="red"/>
                 <PlaneGame onUpdateCoordinates={updatePlaneCoordinates} onUpdateRotation={updatePlaneRotation} />
             </Canvas>
             <div>

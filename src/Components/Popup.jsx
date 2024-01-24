@@ -11,6 +11,7 @@ import Drag from '../Assets/Images/draginstructions.png';
 import Workimg from '../Assets/Images/experience.jpg';
 import Project1 from '../Assets/Images/ProjectImage1.png';
 import Project2 from '../Assets/Images/ProjectImage2.jpg';
+import Project3 from '../Assets/Images/ProjectImage3.png';
 
 
 const Popup = ({Angle}) => 
@@ -295,11 +296,11 @@ const Popup = ({Angle}) =>
 
                     <div className='Project3 bg-slate-100 opacity-80 p-2 max-w-52 rounded-md'>
                         <div className='Project3Content flex flex-col'>
-                            <h2 className='ProjectName font-bold row-span-1 text-sm'>{data.projects[0].project2[0].projectname}</h2>
-                            <p className='ProjectDescription row-span-2 text-xs'>{data.projects[0].project2[0].description}</p>
+                            <h2 className='ProjectName font-bold row-span-1 text-sm'>{data.projects[0].project3[0].projectname}</h2>
+                            <p className='ProjectDescription row-span-2 text-xs'>{data.projects[0].project3[0].description}</p>
                         </div>
                         <div className='Project3Visuals col-span-1 flex flex-col items-center py-2'>
-                            <img src={Project2} alt='Logo' className='row-span-2 w-52 rounded-md'></img>
+                            <img src={Project3} alt='Logo' className='row-span-2 w-52 rounded-md'></img>
                             <div className='space-x-2'>
                                 <button 
                                     className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'   
@@ -308,7 +309,7 @@ const Popup = ({Angle}) =>
                                 </button>
                                 <button 
                                     className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
-                                    onClick={projectGitLink2}
+                                    onClick={projectGitLink1}
                                 >
                                     GitHub                         
                                 </button>

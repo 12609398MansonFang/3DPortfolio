@@ -30,6 +30,13 @@
                     "projectname":"Protect The Cheese (JavaScript Browser Game)",
                     "description":"An interactive and entertaining browser-based guessing game with a user-friendly React GUI, offering word-based challenges, engaging and approachable hints, and a visually engaging design for an immersive and enjoyable player experience."
                 }
+            ],
+            "project3":
+            [
+                {
+                    "projectname":"Hit The Skies (JavaScript Browser Game)",
+                    "description":"A cool JavaScript flying game with fun controls and great visuals. The plan is to build a simulator using real-time flight data, incorporating both global and local coordinates. Exciting updates, including collision detection and a weapons system, are on the way for even more fun."
+                }
             ]
         }
     ],
