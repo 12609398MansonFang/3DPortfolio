@@ -16,7 +16,7 @@ const Plane = () => {
 
 
     return (
-        <mesh ref={planeRef} position={[-0.3,1.2,-0.2]} rotation={[1.5,0,0]}>
+        <mesh ref={planeRef} position={[-0.3,-0.05,-1.2]} rotation={[0,0,0]}>
             <group scale={5}>
                 <primitive object={scene}/>
             </group>

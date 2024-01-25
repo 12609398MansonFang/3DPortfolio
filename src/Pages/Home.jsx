@@ -7,7 +7,6 @@ import Island from '../Models/Island.jsx';
 import Sky from '../Models/Sky.jsx';
 import { useRotation } from '../Components/RotationContext.jsx';
 
-
 const Home = () => {
     const screenSize = () => {
         let scale = null;

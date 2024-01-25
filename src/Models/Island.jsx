@@ -13,6 +13,7 @@ import { a } from '@react-spring/three';
 
 import { useRotation } from '../Components/RotationContext';
 import Plane from './Plane';
+import PlaneStill from './PlaneStill';
 import Soldier from './Soldier';
 import islandModel from '../Assets/GLB/Island.glb';
 
@@ -143,229 +144,229 @@ const Island = ({ isRotating, setIsRotating, currentFocusPoint, onProgress, ...p
 
     return (       
         <a.group ref={islandRef} {...props} >
-                <group position={[0.056, 0, 0.276]} rotation={[-Math.PI / 2, 0, 0]}>
+
+            <group position={[0.056, 0, 0.276]} rotation={[-Math.PI / 2, 0, 0]}>
                     <group rotation={[Math.PI / 2, 0, 0]} scale={0.055}>
-                        <group position={[-42.281, -1.801, 11.779]} rotation={[0, -0.185, 0]}>
-                            <mesh
-                            geometry={nodes.Final_Bridge1_Black_0.geometry}
-                            material={materials.Black}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_Final_Rocks2_Mat_0.geometry}
-                            material={materials.Final_Rocks2_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_Final_Water001_0.geometry}
-                            material={materials["Final_Water.001"]}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Bridge_Mat001_0.geometry}
-                            material={materials["SF_Bridge_Mat.001"]}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Bridge_Mat_0.geometry}
-                            material={materials.SF_Bridge_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Bush_Mat_0.geometry}
-                            material={materials.SF_Bush_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_ButterFly_Mat_0.geometry}
-                            material={materials.SF_ButterFly_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Candle_Mat_0.geometry}
-                            material={materials.SF_Candle_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Chimney_Mat_0.geometry}
-                            material={materials.SF_Chimney_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_CutRock_Mat_0.geometry}
-                            material={materials.SF_CutRock_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Door_Mat_0.geometry}
-                            material={materials.SF_Door_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Grass_Mat_0.geometry}
-                            material={materials.SF_Grass_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_GrassCards_Mat_0.geometry}
-                            material={materials.SF_GrassCards_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_GrassCards_Mat_0001.geometry}
-                            material={materials.SF_GrassCards_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_GrassCards_Mat_0002.geometry}
-                            material={materials.SF_GrassCards_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_GrassCards_Mat_0003.geometry}
-                            material={materials.SF_GrassCards_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_HouseJoins_Mat_0.geometry}
-                            material={materials.SF_HouseJoins_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_HouseSupport_Mat_0.geometry}
-                            material={materials.SF_HouseSupport_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Island_Mat_0.geometry}
-                            material={materials.SF_Island_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Lamp_Mat_0.geometry}
-                            material={materials.SF_Lamp_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_LampGlass_Mat_0.geometry}
-                            material={materials.SF_LampGlass_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Lillypad_Mat_0.geometry}
-                            material={materials.SF_Lillypad_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_MineCart_Mat_0.geometry}
-                            material={materials.SF_MineCart_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_PlasterTex_Mat_0.geometry}
-                            material={materials.SF_PlasterTex_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Rail_Mat_0.geometry}
-                            material={materials.SF_Rail_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Rocks_Mat_0.geometry}
-                            material={materials.SF_Rocks_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Roof_Final_0.geometry}
-                            material={materials.SF_Roof_Final}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Roof_Final_0001.geometry}
-                            material={materials.SF_Roof_Final}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Roof_Final_0002.geometry}
-                            material={materials.SF_Roof_Final}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Roof_Final_0003.geometry}
-                            material={materials.SF_Roof_Final}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Sack_Mat_0.geometry}
-                            material={materials.SF_Sack_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Stalagmites_Mat_0.geometry}
-                            material={materials.SF_Stalagmites_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_StoneBrick_Mat_0.geometry}
-                            material={materials.SF_StoneBrick_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_TreeLeaf_Mat_0.geometry}
-                            material={materials.SF_TreeLeaf_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_TreeWood_Mat_0.geometry}
-                            material={materials.SF_TreeWood_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_TreeWood_Mat_0001.geometry}
-                            material={materials.SF_TreeWood_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Water_Mat_0.geometry}
-                            material={materials.SF_Water_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Windows_Mat_0.geometry}
-                            material={materials.SF_Windows_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Windows_Mat_0001.geometry}
-                            material={materials.SF_Windows_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_Windows_Mat_0002.geometry}
-                            material={materials.SF_Windows_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            <mesh
-                            geometry={nodes.Final_Bridge1_SF_WoodTex_Mat_0.geometry}
-                            material={materials.SF_WoodTex_Mat}
-                            position={[29.081, 1.801, -46.893]}
-                            />
-                            
-                        </group>
-                    </group> 
-            
-                    <Suspense>
-                        <Plane/>
-                    </Suspense>
+                            <group position={[-42.281, -1.801, 11.779]} rotation={[0, -0.185, 0]}>
+                                <mesh
+                                geometry={nodes.Final_Bridge1_Black_0.geometry}
+                                material={materials.Black}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_Final_Rocks2_Mat_0.geometry}
+                                material={materials.Final_Rocks2_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_Final_Water001_0.geometry}
+                                material={materials["Final_Water.001"]}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Bridge_Mat001_0.geometry}
+                                material={materials["SF_Bridge_Mat.001"]}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Bridge_Mat_0.geometry}
+                                material={materials.SF_Bridge_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Bush_Mat_0.geometry}
+                                material={materials.SF_Bush_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_ButterFly_Mat_0.geometry}
+                                material={materials.SF_ButterFly_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Candle_Mat_0.geometry}
+                                material={materials.SF_Candle_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Chimney_Mat_0.geometry}
+                                material={materials.SF_Chimney_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_CutRock_Mat_0.geometry}
+                                material={materials.SF_CutRock_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Door_Mat_0.geometry}
+                                material={materials.SF_Door_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Grass_Mat_0.geometry}
+                                material={materials.SF_Grass_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_GrassCards_Mat_0.geometry}
+                                material={materials.SF_GrassCards_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_GrassCards_Mat_0001.geometry}
+                                material={materials.SF_GrassCards_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_GrassCards_Mat_0002.geometry}
+                                material={materials.SF_GrassCards_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_GrassCards_Mat_0003.geometry}
+                                material={materials.SF_GrassCards_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_HouseJoins_Mat_0.geometry}
+                                material={materials.SF_HouseJoins_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_HouseSupport_Mat_0.geometry}
+                                material={materials.SF_HouseSupport_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Island_Mat_0.geometry}
+                                material={materials.SF_Island_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Lamp_Mat_0.geometry}
+                                material={materials.SF_Lamp_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_LampGlass_Mat_0.geometry}
+                                material={materials.SF_LampGlass_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Lillypad_Mat_0.geometry}
+                                material={materials.SF_Lillypad_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_MineCart_Mat_0.geometry}
+                                material={materials.SF_MineCart_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_PlasterTex_Mat_0.geometry}
+                                material={materials.SF_PlasterTex_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Rail_Mat_0.geometry}
+                                material={materials.SF_Rail_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Rocks_Mat_0.geometry}
+                                material={materials.SF_Rocks_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Roof_Final_0.geometry}
+                                material={materials.SF_Roof_Final}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Roof_Final_0001.geometry}
+                                material={materials.SF_Roof_Final}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Roof_Final_0002.geometry}
+                                material={materials.SF_Roof_Final}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Roof_Final_0003.geometry}
+                                material={materials.SF_Roof_Final}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Sack_Mat_0.geometry}
+                                material={materials.SF_Sack_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Stalagmites_Mat_0.geometry}
+                                material={materials.SF_Stalagmites_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_StoneBrick_Mat_0.geometry}
+                                material={materials.SF_StoneBrick_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_TreeLeaf_Mat_0.geometry}
+                                material={materials.SF_TreeLeaf_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_TreeWood_Mat_0.geometry}
+                                material={materials.SF_TreeWood_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_TreeWood_Mat_0001.geometry}
+                                material={materials.SF_TreeWood_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Water_Mat_0.geometry}
+                                material={materials.SF_Water_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Windows_Mat_0.geometry}
+                                material={materials.SF_Windows_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Windows_Mat_0001.geometry}
+                                material={materials.SF_Windows_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_Windows_Mat_0002.geometry}
+                                material={materials.SF_Windows_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                <mesh
+                                geometry={nodes.Final_Bridge1_SF_WoodTex_Mat_0.geometry}
+                                material={materials.SF_WoodTex_Mat}
+                                position={[29.081, 1.801, -46.893]}
+                                />
+                                
+                            </group>
+                    </group>                     
+            </group>
+
+
+            <Suspense>
+                <Plane/>
+                <Soldier/>
+                <PlaneStill/>
+            </Suspense>
                     
-                    <Suspense>
-                        <Soldier/>
-                    </Suspense>
-                    
-                </group>
+
         </a.group>
-        
     );
 }
 
