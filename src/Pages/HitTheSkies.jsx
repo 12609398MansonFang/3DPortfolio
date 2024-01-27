@@ -65,6 +65,8 @@ const HitTheSkies = () => {
                 <p>------------------------------------------------------------------------</p>
                 <p>Plane Rotation: {`X: ${planeRotation.x}, Y: ${planeRotation.y}, Z: ${planeRotation.z}`}</p>
                 <p>Camera Rotation: {`X: ${cameraRotation.x}, Y: ${cameraRotation.y}, Z: ${cameraRotation.z}`}</p>
+                <p>Press 'W' for forward, 'S' for backward, 'A' to move left, 'D' to move right</p>
+                <p>Press 'Up' for elevation, 'Down' for depression, 'Left  to rotate counter clockwise, 'Right' to rotate clockwise</p>
             </div>
         </div>
     );
