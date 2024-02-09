@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar.jsx';
 import Disclaimer from './Pages/Disclaimer.jsx';
 import ProtectTheCheese from './Pages/ProtectTheCheese.jsx';
 import HitTheSkies from './Pages/HitTheSkies.jsx';
+import Slots from './Pages/Slots.jsx';
 import Home from './Pages/Home.jsx';
 
 import { RotationProvider } from './Components/RotationContext';
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/protectthecheese" element={<ProtectTheCheese />} />
           <Route path="/hittheskies" element={<HitTheSkies />} />
+          <Route path="/slots" element={<Slots />} />
         </Routes>
       </Router>
     </RotationProvider>

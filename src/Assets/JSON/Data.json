@@ -37,6 +37,13 @@
                     "projectname":"Hit The Skies (JavaScript Browser Game)",
                     "description":"A cool JavaScript flying game with fun controls and great visuals. The plan is to build a simulator using real-time flight data, incorporating both global and local coordinates. Exciting updates, including collision detection and a weapons system, are on the way for even more fun."
                 }
+            ],
+            "project4":
+            [
+                {
+                    "projectname":"3D Slots (JavaScript Browser Game)",
+                    "description":"A cool virtual slot machine game, with fun and engaging interactions. Built with Javascript, React, Three.js, Tailwind CSS, and Blender."
+                }
             ]
         }
     ],

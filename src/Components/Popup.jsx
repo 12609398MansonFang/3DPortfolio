@@ -12,6 +12,7 @@ import Workimg from '../Assets/Images/experience.jpg';
 import Project1 from '../Assets/Images/ProjectImage1.png';
 import Project2 from '../Assets/Images/ProjectImage2.jpg';
 import Project3 from '../Assets/Images/ProjectImage3.png';
+import Project4 from '../Assets/Images/ProjectImage4.png';
 
 
 const Popup = ({Angle}) => 
@@ -140,7 +141,7 @@ const Popup = ({Angle}) =>
 
     const projectGitLink1 = () => {
         const link = document.createElement('a')
-        link.href = 'https://github.com/12609398MansonFang/3DPortfolio'
+        link.href = 'https://github.com/12609398MansonFang/3DSlots'
         link.target = '_blank';
         link.click();
     }
@@ -255,12 +256,17 @@ const Popup = ({Angle}) =>
 
                     <div className='Project1 bg-slate-100 opacity-80 p-2 max-w-52 rounded-md'>
                         <div className='Project1Content flex flex-col'>
-                            <h2 className='ProjectName font-bold row-span-1 text-sm'>{data.projects[0].project1[0].projectname}</h2>
-                            <p className='ProjectDescription row-span-2 text-xs'>{data.projects[0].project1[0].description}</p>
+                            <h2 className='ProjectName font-bold row-span-1 text-sm'>{data.projects[0].project4[0].projectname}</h2>
+                            <p className='ProjectDescription row-span-2 text-xs'>{data.projects[0].project4[0].description}</p>
                         </div>
                         <div className='Project1Visuals col-span-1 flex flex-col items-center py-2'>
-                            <img src={Project1} alt='Logo' className='row-span-2 w-52 rounded-md'></img>
+                            <img src={Project4} alt='Logo' className='row-span-2 w-52 rounded-md'></img>
                             <div className='space-x-2'>
+                                <button 
+                                    className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'   
+                                >
+                                    <Link to='/slots'>Play Game</Link>                      
+                                </button>
                                 <button 
                                     className='row-span-1 bg-slate-300 mt-2 p-2 rounded-md text-sm hover:bg-slate-400'
                                     onClick={projectGitLink1}
